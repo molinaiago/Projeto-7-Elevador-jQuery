@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - Elevador jQuery</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/elevator.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="text-center">
+
+            <div class="row">
+                <div class="col-12">
+                    <h1>Elevador com Câmera!</h1>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-4 offset-3">
+
+                    <div class="shaft">
+                        
+                        <div class="buttons">
+            
+                            <button class="btn btn-secondary button3" data-floor="3">3</button>
+            
+                            <button class="btn btn-secondary button2" data-floor="2">2</button>
+            
+                            <button class="btn btn-secondary button1" data-floor="1">1</button>
+            
+                        </div>
+                        
+                        <div class="elevator" data-floor="1">
+            
+                            <div class="door doorL"></div>
+                            
+                            <div class="door doorR"></div>
+            
+                            <div class="display">1</div>
+            
+                            <video class="camera" autoplay></video>
+            
+                        </div>
+            
+                    </div>
+            
+                </div>   
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="Elevator.js"></script>
+
+    <script>
+
+        $(() => {
+
+            window.elevator = new Elevator();
+            
+
+        });
+
+    </script>
+
+</body>
+</html>

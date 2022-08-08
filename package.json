@@ -1,0 +1,16 @@
+{
+  "name": "elevador-jquery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jquery.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "4.0.0",
+    "jquery": "3.4.1"
+  }
+}
