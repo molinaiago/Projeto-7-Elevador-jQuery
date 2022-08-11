@@ -1,0 +1,133 @@
+body {
+    position: absolute;
+    left: 700px;
+    background-color: rgb(114, 108, 96);
+}
+
+h1 {
+    background-color: rgb(216, 177, 91);
+    border: 1px solid rgb(230, 219, 200);
+    border-radius: 5px;
+}
+
+.container {
+    position: relative;
+    top: 90px;
+    left: 50px;
+}
+
+img {
+    height: 70px;
+}
+
+.shaft {
+    width: 150px;
+    height: 600px;
+    background-color: #aeb0b5;
+    position: relative;
+    margin-top: 30px;
+}
+
+.shaft .buttons .btn {
+    border-radius: 20px;    
+    position: absolute;
+    left: -115px;
+}
+
+.shaft .buttons .btn.floor-selected {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.shaft .buttons .btn.button3 {
+    top: 0;
+}
+
+.shaft .buttons .btn.button2 {
+    top: 230px;
+}
+
+.shaft .buttons .btn.button1 {
+    top: 445px;
+}
+
+.elevator {
+    position: absolute;
+    width: 140px;
+    height: 150px;
+    margin-left: 4px;
+    margin-top: 50px;
+    top: 400px;
+    transition: top linear;
+    -webkit-transition: top linear;
+	-moz-transition: top linear;
+	-o-transition: top linear;
+	-ms-transition: top linear;
+    background: url('../img/elevator.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.elevator.floor3 {
+    top: -50px;
+}
+
+.elevator.floor2 {
+    top: 190px;
+}
+
+.elevator.floor1 {
+    top: 400px;
+}
+
+.elevator .door {
+    background-color: #161617;
+    width: 70px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    border: 1px solid gray;
+    transition:left linear 1s, right linear 1s;
+    -webkit-transition:left linear 1s, right linear 1s;
+	-moz-transition:left linear 1s, right linear 1s;
+	-o-transition:left linear 1s, right linear 1s;
+    -ms-transition:left linear 1s, right linear 1s;
+    z-index: 2;
+}
+
+.elevator .door.doorL {
+    left: 0;
+}
+
+.elevator .door.doorR {
+    right: 0;
+}
+
+.elevator .door.doorL.open {
+    left: -65px;
+}
+
+.elevator .door.doorR.open {
+    right: -65px;
+}
+
+.elevator .display {
+    width: 30px;
+    height: 24px;
+    background-color: #000;
+    color: red;
+    position: absolute;
+    left: 55px;
+    text-align: center;
+}
+
+.elevator .camera {
+    height: 70px;
+    position: absolute;
+    left: 22px;
+    top: 26px;
+    transform: rotateY(170deg);
+	-webkit-transform: rotateY(170deg);
+	-moz-transform: rotateY(170deg);
+	-o-transform: rotateY(170deg);
+	-ms-transform: rotateY(170deg);
+}
