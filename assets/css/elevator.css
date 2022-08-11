@@ -1,4 +1,6 @@
 body {
+    position: absolute;
+    left: 700px;
     background-color: rgb(114, 108, 96);
 }
 
